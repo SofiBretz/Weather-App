@@ -1,0 +1,28 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "creating a weather forecast site using the weather API.",
+  "main": "index.js",
+  "dependencies": {
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch --mode=development",
+    "build": "webpack --config webpack.config.js",
+    "start": "webpack-dev-server --mode=development --open",
+    "lint": "eslint ./js/*.js --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SofiBretz/Weather-App.git"
+  },
+  "author": "SofiBretz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SofiBretz/Weather-App/issues"
+  },
+  "homepage": "https://github.com/SofiBretz/Weather-App#readme"
+}
