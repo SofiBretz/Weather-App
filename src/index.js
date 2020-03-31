@@ -55,6 +55,19 @@ function getWeather(latitude, longitude) {
     });
 }
 
+function searchPlace(){
+  searchBtn.addEventListener('click', () => {
+    displayWeather();
+  });
+
+  searchInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+      getWeather(weather.city || weather.country);
+    }
+  });
+  displayWeather();
+}
+
 function displayWeather() {
   iconElement.innerHTML = `<img src="icons/${weather.iconId}.png"/>`;
   tempElement.innerHTML = `${weather.temperature.value}°<span>C</span>`;
