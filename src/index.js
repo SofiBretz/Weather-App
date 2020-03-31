@@ -3,6 +3,8 @@ const tempElement = document.querySelector('.temperature p');
 const descElement = document.querySelector('.temperatureDescription p');
 const locationElement = document.querySelector('.location p');
 const notificationElement = document.querySelector('.notification');
+const searchInput = document.getElementById('search-input');
+const searchBtn = document.getElementById('search-button');
 
 const weather = {};
 

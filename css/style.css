@@ -94,4 +94,19 @@ body{
   font-size: 0.8em;
 }
 
+.search {
+  margin-top: 20px;
+  display: flex;
+  align-content: center;
+  margin-left: 15%;
+  width: 100%;
+}
+
+input {
+  border-radius: 5px;
+}
+
+.searchBtn {
+  border-radius: 5px;
+}
 
