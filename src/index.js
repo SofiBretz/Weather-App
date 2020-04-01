@@ -39,7 +39,6 @@ function getWeather(location) {
       weather.iconId = data.weather[0].icon;
       weather.city = data.name;
       weather.country = data.sys.country;
-      console.log(data);
     })
     .then(function() {
       displayWeatherInfo(iconElement, tempElement, descElement, locationElement, weather);

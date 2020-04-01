@@ -2,7 +2,7 @@
 
 > Weather-App, creating a weather forecast site using the weather API.
 
-![screenshot]()
+![screenshot]('https://i.imgur.com/6wIrIqP.png')
 
 The main goal of this project is create a weather forecast site using the weather API from the previous lesson and be able to search for a specific location and toggle displaying the data in Fahrenheit or Celsius.
 
