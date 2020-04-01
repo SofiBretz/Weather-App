@@ -2,7 +2,7 @@
 
 > Weather-App, creating a weather forecast site using the weather API.
 
-![screenshot]('https://i.imgur.com/6wIrIqP.png')
+![screenshot](https://i.imgur.com/6wIrIqP.png)
 
 The main goal of this project is create a weather forecast site using the weather API from the previous lesson and be able to search for a specific location and toggle displaying the data in Fahrenheit or Celsius.
 
@@ -13,8 +13,7 @@ The main goal of this project is create a weather forecast site using the weathe
 - Bootstrap
 - JavaScript
 - Webpack
-- LocalStorage
-- API
+- Weather API
 
 ## Live Demo
 
@@ -60,7 +59,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Inspiration: "Todo List Project" on The Odin Project site.(https://www.theodinproject.com/courses/javascript/lessons/todo-list)
+- Inspiration: "Weather App" Project on The Odin Project site.(https://www.theodinproject.com/courses/javascript/lessons/weather-app)
 
 ## 📝 License
 
