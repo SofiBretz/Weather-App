@@ -1,32 +1,31 @@
-*{
+* {
   font-family: 'Lato', sans-serif;
-
 }
 
-body{
+body {
   background-color: #293251;
   background-image: url('https://i.imgur.com/3CjFDMs.jpg');
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.container{
-  width: 300px;    
-  background-color: #FFF;
+.container {
+  width: 300px;
+  background-color: #fff;
   display: block;
   margin: 0 auto;
   margin-top: 15%;
   border-radius: 10px;
-  padding-bottom : 50px;
+  padding-bottom: 50px;
 }
 
-.title{
+.title {
   width: 300px;
   height: 50px;
   border-radius: 10px 10px 0 0;
 }
 
-.title p{
+.title p {
   text-align: center;
   padding: 15px;
   margin: 0 auto;
@@ -34,12 +33,12 @@ body{
   color: #293251;
 }
 
-.notification{
+.notification {
   background-color: #f8d7da;
   display: none;
 }
 
-.notification p{
+.notification p {
   color: #721c24;
   font-size: 1.2em;
   margin: 0;
@@ -47,28 +46,28 @@ body{
   padding: 10px 0;
 }
 
-.weatherContainer{
+.weatherContainer {
   width: 300px;
   height: 260px;
-  background-color: #F4F9FF;
+  background-color: #f4f9ff;
 }
 
-.weatherIcon{
+.weatherIcon {
   width: 300px;
   height: 128px;
 }
 
-.weatherIcon img{
+.weatherIcon img {
   display: block;
   margin: 0 auto;
 }
 
-.temperature{
+.temperature {
   width: 300px;
-  height:60px;
+  height: 60px;
 }
 
-.temperature p{
+.temperature p {
   padding: 0;
   margin: 0;
   color: #293251;
@@ -77,12 +76,12 @@ body{
   cursor: pointer;
 }
 
-.temperature span{
+.temperature span {
   color: #293251;
   font-size: 0.5em;
 }
 
-.temperatureDescription p{
+.temperatureDescription p {
   padding: 8px;
   margin: 0;
   color: #293251;
@@ -90,7 +89,7 @@ body{
   font-size: 1.2em;
 }
 
-.location p{
+.location p {
   margin: 0;
   padding: 0;
   color: #293251;
@@ -117,4 +116,3 @@ input {
   background-color: #b2c4cc;
   color: #0a4266;
 }
-

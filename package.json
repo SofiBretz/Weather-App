@@ -4,6 +4,7 @@
   "description": "creating a weather forecast site using the weather API.",
   "main": "index.js",
   "dependencies": {
+    "terser-webpack-plugin": "^2.3.5",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11"
   },
