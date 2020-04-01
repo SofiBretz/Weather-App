@@ -23,20 +23,47 @@ if ('geolocation' in navigator) {
   notificationElement.innerHTML = "<p>Browser doesn't Support Geolocation</p>";
 }
 
-function setPosition(position) {
+
+function getWeather(location) {
+  let api = `http://api.openweathermap.org/data/2.5/weather?q=${location}&APPID=${key}`;
+
+  fetch(api)
+    .then(function(response) {
+      let data = response.json();
+     /*  console.log(data);*/
+      return data; 
+    })
+    .then(function(data) {
+      weather.temperature.value = Math.floor(data.main.temp - KELVIN);
+      weather.description = data.weather[0].description;
+      weather.iconId = data.weather[0].icon;
+      weather.city = data.name;
+      weather.country = data.sys.country; 
+      console.log(data);
+    })
+    .then(function() {
+      /* console.log(data);
+      return data; */
+      displayWeather();
+    });
+}
+
+
+
+/* function setPosition(position) {
   let latitude = position.coords.latitude;
   let longitude = position.coords.longitude;
 
-  getWeather(latitude, longitude);
-}
+ getWeather(latitude, longitude); 
+} */
 
 function showError(error) {
   notificationElement.style.display = 'block';
   notificationElement.innerHTML = `<p> ${error.message} </p>`;
 }
 
-function getWeather(latitude, longitude) {
-  let api = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`;
+/* function getWeather(latitude, longitude) {
+  /* let api = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`; 
 
   fetch(api)
     .then(function(response) {
@@ -53,20 +80,26 @@ function getWeather(latitude, longitude) {
     .then(function() {
       displayWeather();
     });
-}
+} */
 
 function searchPlace(){
-  searchBtn.addEventListener('click', () => {
-    displayWeather();
-  });
 
   searchInput.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') {
-      getWeather(weather.city || weather.country);
+      /* getWeather(weather.city || weather.country); */
+      
+      getWeather(location); 
     }
   });
   displayWeather();
 }
+
+searchBtn.addEventListener('click', () => {
+  let location = searchInput.value;
+  console.log(location);
+  getWeather(location); 
+  /*displayWeather();*/
+});
 
 function displayWeather() {
   iconElement.innerHTML = `<img src="icons/${weather.iconId}.png"/>`;
