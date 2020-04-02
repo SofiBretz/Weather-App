@@ -2,7 +2,7 @@ body {
   font-family: 'Lato', sans-serif;
   background-image: url('../image/weather3.jpg');
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; 
 }
 
 .container {
