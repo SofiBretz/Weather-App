@@ -4,7 +4,8 @@
 
 body {
   background-color: #293251;
-  background-image: url('https://i.imgur.com/3CjFDMs.jpg');
+/*   background-image: url('https://i.imgur.com/3CjFDMs.jpg'); */
+  background-image: url('../image/weather3.jpg');
   background-repeat: no-repeat;
   background-position: center;
 }
