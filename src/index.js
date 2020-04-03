@@ -22,7 +22,7 @@ function errorMessage(error) {
 const weather = {};
 
 weather.temperature = {
-  unit: 'celsius'
+  unit: 'celsius',
 };
 
 const KELVIN = 273;
@@ -77,7 +77,7 @@ function getWeather(location) {
         tempElement,
         descElement,
         locationElement,
-        weather
+        weather,
       );
     });
 }
@@ -88,7 +88,7 @@ function displayWeatherAuto() {
     tempElement,
     descElement,
     locationElement,
-    weather
+    weather,
   );
 }
 

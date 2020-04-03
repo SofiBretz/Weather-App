@@ -4,7 +4,7 @@ function displayWeatherInfo(
   tempElement,
   descElement,
   locationElement,
-  weather
+  weather,
 ) {
   iconElement.innerHTML = `<img src="icons/${weather.iconId}.png"/>`;
   tempElement.innerHTML = `${weather.temperature.value}°<span>C</span>`;
@@ -13,7 +13,6 @@ function displayWeatherInfo(
 }
 
 function showError(notificationElement, error) {
-  console.log('this is show');
   notificationElement.style.display = 'block';
   notificationElement.innerHTML = `<p> ${error.message} </p>`;
 }
