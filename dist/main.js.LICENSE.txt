@@ -1,4 +1,4 @@
-/*! exports provided: displayWeatherInfo */
+/*! exports provided: displayWeatherInfo, showError, displayTemperature */
 
 /*! no exports provided */
 
