@@ -14,6 +14,7 @@ The main goal of this project is create a weather forecast site using the weathe
 - JavaScript
 - Webpack
 - Weather API
+- npm
 
 ## Live Demo
 
@@ -33,7 +34,8 @@ The main goal of this project is create a weather forecast site using the weathe
 
 - Install a text editor (if you don't have already).
 - Clone the project to your computer.
-
+- run: npm install.
+- run: npm run start.
 
 ### Dev Dependencies
 
