@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <title>Weather App</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <p>Weather App</p>
+      </div>
+      <div class="notification"></div>
+      <div class="weatherContainer">
+        <div class="weatherIcon">
+          <img src="/dist/icons/unknown.png" alt="" />
+        </div>
+        <div class="temperature">
+          <p>- °<span>C</span></p>
+        </div>
+        <div class="temperatureDescription">
+          <p>-</p>
+        </div>
+        <div class="location">
+          <p>-</p>
+        </div>
+        <div id="search-input-total" class="search">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Search a place here"
+            aria-label="Search for a place here..."
+            aria-describedby="search-button"
+            id="search-input"
+          />
+          <div>
+            <button class="searchBtn" type="button" id="search-button">
+              Search
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
