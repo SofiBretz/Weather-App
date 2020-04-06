@@ -1,8 +1,12 @@
-body {
-  font-family: 'Lato', sans-serif;
+html {
   background-image: url('../image/weather3.jpg');
   background-repeat: no-repeat;
   background-position: center; 
+  background-color: #357A91;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
 }
 
 .container {
