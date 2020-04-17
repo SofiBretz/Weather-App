@@ -18,7 +18,7 @@ The main goal of this project is create a weather forecast site using the weathe
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/SofiBretz/Weather-App/5c35111490b61fcc68d0f39f19a196b8f098f3ae/dist/index.html)
+[Live Demo Link](https://sofibretz.github.io/Weather-App/)
 
 ## Getting Started
 
